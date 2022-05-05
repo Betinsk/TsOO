@@ -2,7 +2,7 @@ import  Carro  from './Carro'
 import Concessionaria  from './Concessionaria'
 import  Pessoa from './Pessoa'
 
-export let carroA = new Carro('Corsa', 4)
+ let carroA = new Carro('Corsa', 4)
 let carroB = new Carro('Ferrari', 4)
 let carroC = new Carro('Lambo', 2)
 

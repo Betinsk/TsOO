@@ -3,14 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.listaCarros = exports.carroA = void 0;
+exports.listaCarros = void 0;
 const Carro_1 = __importDefault(require("./Carro"));
 const Concessionaria_1 = __importDefault(require("./Concessionaria"));
 const Pessoa_1 = __importDefault(require("./Pessoa"));
-exports.carroA = new Carro_1.default('Corsa', 4);
+let carroA = new Carro_1.default('Corsa', 4);
 let carroB = new Carro_1.default('Ferrari', 4);
 let carroC = new Carro_1.default('Lambo', 2);
-exports.listaCarros = [exports.carroA, carroB, carroC];
+exports.listaCarros = [carroA, carroB, carroC];
 let concessionaria = new Concessionaria_1.default('Av Paulista', exports.listaCarros);
 let cliente = new Pessoa_1.default('Carlos Alberto', 'Corsa');
 concessionaria.mostrarListaDeCarros().map((carro) => {
